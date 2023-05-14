@@ -1,11 +1,11 @@
 {
   "name": "ffmetadata1",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FFMETADATA1 parser",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --declaration -t es2022 --pretty",
     "prepublish": "npm run docs && npm run build",
     "test": "mocha tests/*.js",
     "docs": "typedoc --out docs src"
