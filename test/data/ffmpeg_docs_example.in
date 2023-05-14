@@ -1,0 +1,14 @@
+;FFMETADATA1
+title=bike\\shed
+;this is a comment
+artist=FFmpeg troll team
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+#chapter ends at 0:01:00
+END=60000
+title=chapter \#1
+[STREAM]
+title=multi\
+line

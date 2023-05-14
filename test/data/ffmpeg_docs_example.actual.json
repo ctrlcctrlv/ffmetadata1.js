@@ -1,0 +1,10 @@
+title=bike\\shed
+artist=FFmpeg troll team
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=60000
+title=chapter \#1
+[STREAM]
+title=multi\
+line

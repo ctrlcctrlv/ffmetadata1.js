@@ -1,0 +1,16 @@
+{
+  "CHAPTER": [
+    {
+      "TIMEBASE": "1/1000",
+      "START": "0",
+      "END": "60000",
+      "title": "Chapter №1"
+    },
+    {
+      "TIMEBASE": "1/1000",
+      "START": "60000",
+      "END": "120000",
+      "title": "Chapter №2"
+    }
+  ]
+}

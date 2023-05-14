@@ -1,0 +1,42 @@
+{
+  "name": "ffmetadata1",
+  "version": "1.0.0",
+  "description": "FFMETADATA1 parser",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run docs && npm run build",
+    "test": "mocha tests/*.js",
+    "docs": "typedoc --out docs src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctrlcctrlv/ffmetadata1.js.git"
+  },
+  "keywords": [
+    "FFMETADATA1",
+    "ffmpeg",
+    "parsing",
+    "parser"
+  ],
+  "author": "Fredrick R. Brennan <copypaste@kittens.ph>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ctrlcctrlv/ffmetadata1.js/issues"
+  },
+  "homepage": "https://github.com/ctrlcctrlv/ffmetadata1.js#readme",
+  "devDependencies": {
+    "@types/node": "^20.1.4",
+    "@types/pegjs": "^0.10.3",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "typedoc": "^0.24.7"
+  },
+  "dependencies": {
+    "readline": "^1.3.0"
+  },
+  "optionalDependencies": {
+    "commander": "^10.0.1"
+  }
+}
