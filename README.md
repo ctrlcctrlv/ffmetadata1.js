@@ -107,7 +107,7 @@ writeFFMetadata(metadata, 'output.txt')
 
 ## License
 
-```plain
+```text
 Copyright 2023 Fredrick R. Brennan (★コピペ) <copypaste@kittens.ph>
 
 Licensed under the Apache License, Version 2.0 (the "License");
