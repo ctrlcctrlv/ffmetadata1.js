@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import { HEADER } from ".";
 
 /**
  * Special characters that need to be escaped in metadata values.
@@ -42,8 +43,10 @@ export async function writeFFMetadata(
     fileStream = process.stdout;
   }
 
+  let stream: any = fileStream;
+  stream.write(HEADER);
+
   for (const [key, value] of Object.entries(metadata)) {
-    let stream: any = fileStream;
     if (Array.isArray(value)) {
       // Handle section arrays
       for (const section of value) {

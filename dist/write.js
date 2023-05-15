@@ -25,6 +25,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.writeFFMetadata = exports.SPECIAL_CHARACTERS = void 0;
 const fs = __importStar(require("fs"));
+const _1 = require(".");
 /**
  * Special characters that need to be escaped in metadata values.
  */
@@ -61,8 +62,9 @@ async function writeFFMetadata(metadata, filePath) {
     else {
         fileStream = process.stdout;
     }
+    let stream = fileStream;
+    stream.write(_1.HEADER);
     for (const [key, value] of Object.entries(metadata)) {
-        let stream = fileStream;
         if (Array.isArray(value)) {
             // Handle section arrays
             for (const section of value) {
